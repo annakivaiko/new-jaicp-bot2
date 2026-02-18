@@ -1,4 +1,4 @@
-<test integration="false">
+<test integration="true">
 
     <test-case id="1">
         <q>/start</q>
