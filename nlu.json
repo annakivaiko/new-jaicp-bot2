@@ -44,13 +44,32 @@
       "refs" : [ ]
     },
     "priority" : 0
+  }, {
+    "path" : "/geo",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "@mystem.geo"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "slots" : [ {
+      "name" : "geo",
+      "entity" : "mystem.geo",
+      "required" : true,
+      "prompts" : [ "Введите город. В каком городе вы хотели бы узнать прогноз погоды?" ],
+      "array" : false
+    } ],
+    "priority" : 0
   } ],
   "entities" : [ ],
-  "enabledSystemEntities" : [ "duckling.number", "duckling.time", "duckling.duration", "duckling.phone-number", "duckling.email", "duckling.url" ],
+  "enabledSystemEntities" : [ "mystem.geo", "duckling.number", "duckling.time", "duckling.duration", "duckling.phone-number", "duckling.email", "duckling.url" ],
   "spellerDictionary" : [ ],
   "systemEntities" : [ {
     "name" : "mystem.geo",
-    "enabled" : false
+    "enabled" : true
   }, {
     "name" : "mystem.persn",
     "enabled" : false
